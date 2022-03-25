@@ -1,0 +1,25 @@
+body {
+    background-color: coral;
+    text-align: center;
+}
+p {
+    font-style: initial;
+    color: rgb(50, 40, 20);
+}
+p {
+    font-family: 'Comforter Brush', cursive;
+   }
+   h2 {
+       height: 50px;
+       
+   }
+   h3 {
+       padding: 25px;
+       
+   }
+   ul {list-style-type:none;}
+   #textMyPicture {
+       padding: 5px 20px 30px 30px;
+       text-shadow: rgb(50, 40, 20);
+       font-size: 50px;
+   }
