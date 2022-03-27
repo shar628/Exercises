@@ -1,6 +1,7 @@
 .container {
     /* position: relative; */
 }
+/* The problem is The small box is located as absolute in relation to the whole page and not in relation to the large box */
 #outer {
     width: 100px;
     height: 100px;
