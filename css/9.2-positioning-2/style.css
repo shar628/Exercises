@@ -1,21 +1,23 @@
-.container {
-    /* position: relative; */
-}
 #outer {
+    position: relative;
     width: 100px;
     height: 100px;
     background: darkcyan;
     margin: 50px;
-    position: relative;
-    z-index: 2;
+    } 
+    .container {
+        position: relative;
+    width: 100px;
+    height: 100px;
+    background: darkcyan;
+    margin: 0px;
+    font-size: larger;
     }
     #inner {
     width: 50px;
     height: 50px;
     background: lightgreen;
     position: absolute;
-    top: 10px;
-    left: 50px;
-    z-index: 3;
-    }
+    top: 20px;
+    } 
   
