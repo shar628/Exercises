@@ -1,0 +1,94 @@
+*{
+    /* background-color: black; */
+
+}
+.container {
+    text-align: center;
+
+}
+.box1 .btn1 {
+    background: rgb(97, 211, 97);
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    /* border-radius: 5px; */
+
+}
+ .box1 .btn1:hover {
+    background: green;
+    color: white;
+} 
+.box1 .btn2 {
+    background: rgb(211, 97, 97);
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    /* border-radius: 5px; */
+
+}
+ .box1 .btn2:hover {
+    background: red;
+    color: white;
+} 
+.box1 .btn3 {
+    background: rgb(97, 143, 211);
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    /* border-radius: 5px; */
+
+}
+ .box1 .btn3:hover {
+    background: blue;
+    color: white;
+}
+.box2 .btn1 {
+    background: rgb(211, 184, 97);
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+ .box2 .btn1:hover {
+    background: rgb(128, 77, 0);
+    color: white;
+}
+.box2 .btn2 {
+    background: rgb(181, 211, 97);
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+ .box2 .btn2:hover {
+    background:  yellow;
+    color: white;
+} 
+.box2 .btn3 {
+    background: grey;
+    color: white;
+    border: none;
+    font-size: 16px 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+ .box2 .btn3:hover {
+    background: gray;
+    color: white;
+} 
+.box3 .btn1 {
+    color: white;
+border-radius: 1px;
+border: rgb(97, 143, 211);
+    /* background: none; */
+}
+ 
