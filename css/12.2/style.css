@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+   max-width: 950px;
+    /* width: 960px; */
+    margin: 80px auto;
+}
+.clr {
+    clear: both;
+}
+#box1 {
+    border: 1px; 
+    border-style: solid;
+    border-color: violet;
+    float: left;
+    width: 24%;
+}
+#box2 {
+    float: left;
+    width: 24%;
+}
+#box3 {
+    float: left;
+    width: 24%;
+
+}
+#box4 {
+    width: 24%;
+    float: left;
+}
