@@ -9,25 +9,59 @@
     margin: 80px auto;
 }
 .clr {
-    clear: both;
+    /* clear: both; */
 }
 #box1 {
-    border: 1px; 
+    border: 12px; 
     border-style: solid;
     border-color: violet;
     float: left;
     width: 24%;
 }
 #box2 {
+    border: 9px; 
+    border-style: solid;
+    border-color: rgb(130, 238, 162);
     float: left;
     width: 24%;
 }
 #box3 {
+    border: 7px; 
+    border-style: solid;
+    border-color: rgb(238, 130, 130);
     float: left;
     width: 24%;
 
 }
 #box4 {
+    border: 5px; 
+    border-style: solid;
+    border-color: rgb(197, 238, 130);
     width: 24%;
     float: left;
 }
+@media(max-width: 650px) {
+      #box4 {
+        float: none;
+    } 
+    @media(max-width: 650px) {
+        #box3 {
+          float: none;
+        }
+        @media(max-width: 650px) {
+            #box2 {
+              float: none;
+            } 
+            @media(max-width: 650px) {
+                #box1 {
+                  float: none;
+                } 
+                @media(max-width: 650px) {
+                    .container {
+                        float: right;
+                        margin: auto;
+                        max-width: 950px;
+                         /* width: 960px; */
+                         margin: 80px auto;
+                     }
+                }

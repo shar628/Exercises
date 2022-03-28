@@ -1,3 +1,25 @@
-p {
-    font-size: 5vw;
+@media(max-width: 650px) {
+    body {
+        font-size: 20px;
+        background: red;
+    }
 }
+@media(min-width:651px) and (max-width: 800px) {
+    body {
+        font-size: 40px;
+        background: bisque;
+    }
+} 
+@media (min-width:801px) and  (max-width: 1000px) {
+    body {
+        font-size: 80px;
+        background: blue;
+    }
+} @media (min-width:1001px) and (max-width: 2900px) {
+    body {
+        
+        /* font-size: larger; */
+        background: green;
+        font-size: 120px;
+    }
+} 

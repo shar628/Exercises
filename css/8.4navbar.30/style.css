@@ -1,0 +1,25 @@
+li {
+    display: inline;
+}
+li a {
+    padding-right: 20px;
+}
+img {
+     width: 300px;
+    }
+img {
+    display: block;
+margin: auto;
+}
+h3  {
+    /* margin: auto; */
+    /* align-self: center; */
+}
+.box {
+    box-sizing: border-box;
+    width: 32%;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+}
