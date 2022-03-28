@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 90rem;
+    height: 50rem;
+    margin: auto;
+    background-color: gray;
+    
+    flex-direction: column;
+    display: flex;
+    /* align-items: ; */
+    /* align-items: baseline; */
+    /* align-items: flex-start; */
+
+    justify-content: space-around;
+    /* align-content: space-around; */
+}
+#box1 {
+    width: 5rem;
+    height: 5rem;
+    background-color: green;
+} 
+#box2 {
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+} #box3 {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+} 
