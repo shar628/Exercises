@@ -1,0 +1,16 @@
+.a1:after {
+    /* content: '55' */
+}
+.a1 {
+    /* background-color: aqua; */
+}
+body {
+    /* background-color: aqua; */
+}
+a[target] {
+    background: black;
+    color: azure;
+}
+a:after {
+    content: "(" attr(href) ")" ;
+}
