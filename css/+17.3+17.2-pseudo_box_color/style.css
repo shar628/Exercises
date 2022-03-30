@@ -13,6 +13,7 @@
     position: absolute;
 }
 /* this is for example number 17.3 */
+
 #box1:hover::after {
     background-color: blue;
 }
