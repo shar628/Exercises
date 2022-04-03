@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "Gotham Medium";
+    src: url(/styles/assets/fonts/GothamSSm-Medium_Web.woff2);
+  }
+  
+  @font-face {
+    font-family: "Gotham light";
+    src: url(/styles/assets/fonts/GothamSSm-Light_Web.woff2);
+  }
+  
+  @font-face {
+    font-family: "Gotham SSm";
+    src: url(/styles/assets/fonts/GothamSSm-Book_Web.woff2);
+  }
+  
+  @font-face {
+    font-family: "Gotham bold";
+    src: url(/styles/assets/fonts/GothamSSm-Bold_Web.woff2);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    border: 1px solid black;
+    font-family: "Gotham Medium";
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .page-1 {
+    background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D)
+      no-repeat center center/ cover;
+    height: 108vh;
+    width: 98.8vw;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .page-1__logo {
+    height: 30px;
+    width: 180px;
+    padding-left: 40px;
+    margin-top: 5px;
+    float: left;
+    /* border: orange solid 2px; */
+  }
+  
+  .navbar__mid {
+    position: absolute;
+    right: 30%;
+  }
+  
+  .navbar__right {
+    float: right;
+    overflow: auto;
+    padding-right: 32px;
+  }
+  
+  .navbar ul li {
+    float: left;
+    overflow: auto;
+    padding: 0px 5px;
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    padding: 4px 14px;
+    text-decoration: none;
+    color: #fff;
+  
+    border: solid 1px transparent;
+    border-radius: 12px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #81848b;
+    transition: 0.8s;
+  }
+  
+  .page-1__title {
+    display: block;
+    font-size: 43px;
+    position: relative;
+    text-align: center;
+    top: 130px;
+    margin-bottom: 600px;
+  }
+  
+  .page-1__footer {
+    /* border: white 1px solid; */
+    margin: auto;
+    /* width: 100%; */
+    height: 75px;
+    position: relative;
+  }
+  
+  .speedometer-tab {
+    /* border: white 1px solid; */
+    width: 120px;
+    height: 70px;
+    position: relative;
+    font-size: 30px;
+    text-align: right;
+    margin-left: 30.5%;
+  }
+  
+  .speedometer-icon {
+    /* border: white 1px solid; */
+    width: 52px;
+    position: absolute;
+    margin-top: 4px;
+  }
+  
+  .seconds {
+    font-size: 26px;
+  }
+  
+  .speedometer-footer {
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+  }
+  
+  .miles-tab {
+    /* border: white 1px solid; */
+    font-size: 30px;
+    width: 155px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    text-align: center;
+    /* margin-left: 30.5%; */
+  }
+  
+  .miles-footer {
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+  }
+  
+  .awd-tab {
+    /* border: white 1px solid; */
+    font-size: 30px;
+    width: 155px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 40.5%;
+    text-align: center;
+  }
+  
+  .awd-footer {
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 38px;
+  }
+  
+  .order-now {
+    /* border: white 1px solid; */
+    font-size: 14px;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 29.5%;
+    text-align: center;
+  }
+  
+  .order-now a {
+    display: block;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #fff;
+    border: solid 3px white;
+    border-radius: 32px;
+    margin-top: 4px;
+  }
+  
+  .order-now a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.6s;
+  }
+  
+  .page-2 {
+    /* background-color: #fff; */
+    color: #000;
+    height: 800px;
+    position: relative;
+  }
+  
+  .page-2__logo-wrapper {
+    /* border: #000 solid 1px; */
+    width: 200px;
+    /* height: 30px; */
+    position: sticky;
+    top: 0px;
+  }
+  
+  .page-2__logo {
+    height: 30px;
+    width: 195px;
+    padding-left: 54px;
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .page-2__right-side {
+    height: 100%;
+    width: 74%;
+    float: right;
+    /* position: absolute;
+    top: 0px;
+    right: 0px; */
+    background-color: #f5f5f5;
+  }
+  
+  .page-2__right-side__img {
+    height: 100%;
+    width: 913px;
+    background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero)
+      no-repeat -310px center / cover;
+  }
+  
+  .page-2__left-side {
+    /* border: #000 solid 1px; */
+    padding: 0px 54px;
+    height: 100%;
+    width: 438px;
+    /* width: 415px; */
+    padding-top: 54px;
+  }
+  
+  .page-2__left-side__text {
+    /* border: #000 solid 1px; */
+    height: 290px;
+  }
+  
+  #pre-header {
+    font-family: "Gotham light";
+    font-size: 17px;
+  }
+  
+  .page-2__left-side__text__header {
+    font-size: 27px;
+    color: #181b21;
+    margin-bottom: 20px;
+  }
+  
+  .page-2__left-side__text p {
+    margin: auto;
+    font-family: "Gotham SSm";
+    font-size: 14px;
+    color: #393c41;
+    line-height: 23px;
+    width: 315px;
+  }
+  
+  .page-2__left-side__ratings {
+    border: transparent solid 1px;
+    border-radius: 24px;
+    height: 296px;
+    width: 315px;
+    background-color: #e2e4e4;
+    padding: 24px;
+    margin: auto;
+  }
+  
+  .page-2__left-side__header {
+    font-size: 20px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: #181b21;
+  }
+  
+  .page-2__left-side__ratings ul {
+    list-style: none;
+  }
+  
+  .page-2__left-side__ratings__cards {
+    height: 36.8px;
+    color: #393c41;
+    padding-bottom: 8px;
+    position: relative;
+  }
+  
+  .page-2__left-side__ratings__cards__header {
+    font-family: "Gotham bold";
+    font-size: 16px;
+  }
+  
+  .page-2__left-side__ratings__cards__micro {
+    font-family: "Gotham SSm";
+    font-size: 8px;
+    position: absolute;
+    left: 0px;
+    bottom: 6px;
+  }
+  
+  .page-2__left-side__ratings__cards__stars {
+    position: absolute;
+    right: 0px;
+    font-size: 17px;
+  }
+  
+  .page-2__left-side__buttons {
+    /* border: black solid 1px; */
+    margin: auto;
+    margin-top: 16px;
+    width: 315px;
+    height: 110.4px;
+    color: #393c41;
+    position: relative;
+  }
+  
+  .page-2__left-side__buttons__learn {
+    background-color: white;
+    font-family: "Gotham SSm";
+    position: absolute;
+    top: 38%;
+    font-size: 14px;
+  }
+  
+  .page-2__left-side__buttons a {
+    text-decoration: none;
+    border: #393c41 solid 3px;
+    font-size: 18px;
+    border-radius: 24px;
+    padding: 8px 14px;
+    font-size: 20px;
+    color: #393c41;
+  }
+  
+  .page-2__left-side__buttons a:hover {
+    color: white;
+    background-color: black;
+    border-color: #000;
+    cursor: pointer;
+    transition: 10ms;
+  }
+  
+  .page-2__left-side__buttons__order {
+    position: absolute;
+    right: 10px;
+    top: 42%;
+  }
+  
+  #order {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+  
+  #order:hover {
+    transition: 0.5s;
+  }
+  
+  .page-3 {
+    /* border: #000 solid 1px; */
+    /* background-color: coral; */
+    height: 720px;
+    position: relative;
+    color: #000;
+  }
+  
+  .page-3__logo-wrapper {
+    /* border: #000 solid 1px; */
+    width: 200px;
+    /* height: 30px; */
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+  
+  .page-3__logo {
+    height: 30px;
+    width: 195px;
+    padding-left: 54px;
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .page-3__img {
+    background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop)
+      no-repeat center center/ cover;
+    height: 470px;
+    width: 100vw;
+  }
+  
+  .page-3__buttom {
+    /* border: #000 solid 1px; */
+    height: 198px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .page-3__buttom__text {
+    /* border: #000 solid 1px; */
+    font-family: "Gotham SSm";
+    color: #393c41;
+    font-size: 14px;
+    height: 120px;
+    width: 624px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 48px;
+    right: 300px;
+    line-height: 23px;
+  }
+  
+  .page-3__buttom__buttons {
+    /* border: #000 solid 1px; */
+    width: 351px;
+    height: 120px;
+    font-family: "Gotham light";
+    font-size: 17px;
+    color: #181b21;
+    position: absolute;
+    top: 48px;
+    left: 400px;
+  }
+  
+  .page-3__buttom__buttons_header {
+    font-family: "Gotham Medium";
+    font-size: 28px;
+  }
+  
+  #page-3__buttons {
+    height: 50px;
+    margin: 0;
+  }
+  
+  #page-3__speedometer-tab {
+    width: 298px;
+  }
+  
+  .page-4 {
+    height: 1000px;
+  }
