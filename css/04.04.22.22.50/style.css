@@ -1,0 +1,99 @@
+.body {
+    background-color: silver;
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+button {
+    width: 120px;
+    line-height: 60px;
+    background-color: #f90;
+    text-align: center;
+    font-size: 24px;
+    /* transition: cubic-bezier(0.23, 1, 0.320, 1); */
+    /* transition-property: all; */
+    transition: 3s all;
+    /* transition-duration: 4s; */
+}
+button:hover {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+}
+.img-bike {
+    margin-top:30px;
+margin-left:50px;
+margin-right:5px;
+margin-bottom:50px;
+    
+    transition: 2s all;
+}
+.img-bike:hover {
+/* width: 300px; */
+/* transform: scale(1.5,1.5); */
+transform: rotate(270deg);
+}
+.container {
+    /* width: 700px; */
+    /* height: 700px; */
+    /* background:skyblue ; */
+    /* margin: 0 auto ; */
+    /* padding: 8px ; */
+    /* position: relative; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.box11 {
+    flex: 1;
+    /* height: 100px; */
+    /* width: 80px; */
+    /* border: 5px solid black; */
+    /* color: skyblue; */
+    /* margin-bottom: 4px; */
+    /* position: absolute; */
+}
+.box12 {
+    flex: 1;
+    /* border: 5px sienna dashed; */
+    /* height: auto; */
+    /* position: absolute; */
+    /* border: 5px solid black; */
+}
+.box13 {
+    order: 3;
+    /* color: blue; */
+    flex: 1;
+}
+.box {
+    /* width: 150px; */
+    /* height: 180px; */
+    color: blueviolet;
+    /* border: 2px; */
+    /* position: absolute; */
+    border: 1px solid black;
+}
+.box14 {
+    flex: 3;
+    order: -1;
+}
+.box15 {
+    flex: 3;
+    order: 2;
+    
+}
+.container2 {
+    /* border: 2px solid rebeccapurple; */
+display: flex;
+justify-content:center ;
+/* align-items: flex-end; */
+}
+.box77 {
+    /* max-height: 100px; */
+    color: brown;
+    align-items: center;
+    background-color: chartreuse;
+    width: 100px;
+    height: 150px;
+    border: 2px solid red;
+}
