@@ -81,6 +81,7 @@ function power(a) {
     let result = Math.pow(myNumber, 2);
     return result;
 }
+// my answer 
 
 // From function expressions to IIFE functions.
 const squareRoot = a => Math.sqrt(a);

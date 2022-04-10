@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    min-width: 996px;
+    padding: 14px 18px 18px;
+  
+    height: 100vh;
+  }
+  .main_images_ul li {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+  }
+  .main_images_ul li input {
+    border: none;
+    text-indent: -9999px;
+    height: 50px;
+    width: 40px;
+    cursor: pointer;
+  } 
+  .main_images_img1 input {
+    background: url(images2/edvin-johansson-rlwE8f8anOc-unsplash.jpg) no-repeat;
+  } 
+  .main_images_img2 input {
+    background: url(images2/kelsey-curtis--27u_GzlAFw-unsplash.jpg) no-repeat;
+  } 
+  .main_images_ul li::after {
+    content: "";
+    height: 390px;
+    width: 500px;
+    position: absolute;
+    left: 100px;
+  } 
