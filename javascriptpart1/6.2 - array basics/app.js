@@ -20,8 +20,10 @@ console.log(people.indexOf('foo'));
 const people2 = ["Greg", "Mary", "Devon", "James"];
 console.log(people2.splice(2, 1, "Artie"));
 // 8 לא הצלחתי
+console.log(people2.indexOf("Mary"));
+
 
 const bob = ['a', 'b', 'c'];
 const withBob = ['d', 'e', 'f'];
 const withBob2 = bob.concat(withBob);
-console.log(withBob2);
+// console.log(withBob2);
