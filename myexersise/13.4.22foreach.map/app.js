@@ -19,3 +19,9 @@ let copy1 = werwer2.slice();
 let copy2 = werwer2.slice(0, 4);
 console.log(copy1);
 console.log(copy2);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const fruits2 = fruits.find(fruits3 => {
+    return (fruits3.includes('ge'));
+});
+console.log(fruits2);
