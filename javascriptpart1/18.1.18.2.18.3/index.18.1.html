@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" / >
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id <button>fff</button></div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+  <script>
+    //your js code here
+    const all1 = document.body;
+    const h1 = all1.children[0];
+    const input3 = all1.children[8];
+    // console.log(h1, input3);
+    // const all2 = document.querySelectorAll("body *");
+    const all2 = document.querySelectorAll("body > *");
+    const h11 = all2[0];
+    // console.log(h11);
+    const input1 = document.querySelectorAll("input");
+    input1.forEach(function (el) {
+      //   console.log(el);
+    });
+    const input2 = document.getElementsByTagName("input");
+    input2.forEach((el1) => {
+      console.log(el1);
+    });
+  </script>
+</html>

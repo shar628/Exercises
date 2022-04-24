@@ -1,0 +1,14 @@
+{
+  "name": "19.4.22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "19.4.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
