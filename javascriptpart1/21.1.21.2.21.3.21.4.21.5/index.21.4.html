@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img onclick="toggle()" src="images/bulboff2.jpg" alt="" />
+
+    <script>
+      let ison = false;
+      function toggle() {
+        if (ison === false) {
+          ison = true;
+          document.querySelector("img").src = "images/bulbon.jpg";
+        } else {
+          ison = false;
+          document.querySelector("img").src = "images/bulboff2.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>

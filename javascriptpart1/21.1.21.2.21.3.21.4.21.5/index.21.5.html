@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>how many do you want?</h3>
+    <div style="display: flex">
+      <input type="text" />
+      <button onclick="numsmily()">submit</button>
+    </div>
+    <div id="smily" style="display: flex"></div>
+    <div id="err2"></div>
+    <script>
+      const err = document.getElementById("err2");
+      const input1 = document.querySelector("input");
+      const smily1 = document.getElementById("smily");
+      function numsmily() {
+        if (isNaN(input1.value)) {
+          err.textContent = "not a number ";
+          return;
+        }
+        const n = parseInt(input1.value);
+        for (let i = 0; i < n; i++) {
+          smily1.innerHTML += "<img src='images/smily2.jpg' alt='smily'> ";
+        }
+      }
+    </script>
+  </body>
+</html>

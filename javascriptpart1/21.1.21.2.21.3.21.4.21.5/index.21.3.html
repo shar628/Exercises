@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>why are you?</h3>
+    <textarea name="" id="txt" cols="40" rows="6"></textarea>
+    <button onclick="buttonHandler()">click here</button>
+    <div id="msg"></div>
+    <script>
+      const textarea = document.getElementById("txt");
+      const msg = document.getElementById("msg");
+      function buttonHandler() {
+        if (textarea.value.length < 100) {
+          msg.textContent = "text at least 100 letters";
+        }
+      }
+    </script>
+  </body>
+</html>
