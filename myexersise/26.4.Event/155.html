@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button style="position: absolute; top: 10px; left: 10px">
+      try to click me
+    </button>
+    <script>
+      const btn2 = document.querySelector("button");
+
+      //   btn2.addEventListener("mouseover", function () {
+      //     console.log("mouse over me");
+      //     const height = Math.floor(Math.random() * window.innerHeight);
+      //     const widht = Math.floor(Math.random() * window.innerWidth);
+      //     btn2.style.left = `${widht}px`;
+      //     btn2.style.top = `${height}px`;
+      //   });
+      btn2.addEventListener("click", function () {
+        btn2.textContent = "you are good";
+        btn2.style.color = "green";
+      });
+    </script>
+  </body>
+</html>

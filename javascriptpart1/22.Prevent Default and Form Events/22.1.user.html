@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="name"></div>
+    <div id="age"></div>
+    <div id="email"></div>
+    <button id="confirm">confirm</button>
+    <div id="msg" style="visibility: hidden">
+      congratulations you successfully sent this form”
+    </div>
+    <button id="change">change</button>
+    <div id="change1" style="visibility: hidden">
+      <label> your name<input type="text" name="name2" /> </label>
+      <label> your age<input type="number" name="age2" /></label>
+      <label> your email <input type="email" name="email2" /></label>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("name").textContent = params.get("name2");
+      document.getElementById("age").textContent = params.get("age2");
+      document.getElementById("email").textContent = params.get("email2");
+      const confirm = document.getElementById("confirm");
+      confirm.addEventListener("click", function () {
+        document.getElementById("msg").style.visibility = "visible";
+      });
+      const change = document.getElementById("change");
+      change.addEventListener("click", function () {
+        document.querySelector("[name='name2']").value = params.get("name2");
+        document.querySelector("[name='age2']").value = params.get("age2");
+        document.querySelector('[name="email2"]').value = params.get("email2");
+        document.getElementById("change1").style.visibility = "visible";
+      });
+    </script>
+  </body>
+</html>

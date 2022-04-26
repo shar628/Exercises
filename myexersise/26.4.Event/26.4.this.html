@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let car = {
+        cars: [
+          { make: "Lamborghini", model: "Huracán" },
+          { make: "Mclaren", model: "720s" },
+          { make: "Ferrari", model: "Italia" },
+        ],
+        fullName: function () {
+          this.cars.forEach(() => {
+            console.log(this.make + " " + this.model);
+          });
+        },
+      };
+      car.fullName();
+    </script>
+  </body>
+</html>
