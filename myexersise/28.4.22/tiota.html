@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   console.log({});
+      //   console.log(new object());
+      //   console.log([]);
+      const Person = function (firstname, age) {
+        // console.log(this);
+        this.ourname = firstname;
+        this.myname = age;
+      };
+      //   Person.prototype.calcage2 = function () {
+      //     return 2022 - this.myage;
+      //   };
+      Person.prototype.species = "human";
+      //   new person("shaul", 40);
+      //   console.log(person("shaul", 40));
+      const ofir = new Person("aaa", 18);
+      const ofer = new Person("bbb", 40);
+      console.log(ofir.__proto__ === Person.prototype);
+      //   console.log(ofer);
+      //   Array.prototype.find = "no";
+      //   const arr = [];
+      //   console.log(arr);
+    </script>
+  </body>
+</html>

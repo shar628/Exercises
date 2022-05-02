@@ -13,3 +13,6 @@ for (let i = 0; i < numbers.length; i++) {
 tableHtmlString += '</table>';
 
 document.body.innerHTML = tableHtmlString;
+const aekol10 =  for(let i = 1 ; i < 10 ; i++) {
+
+}

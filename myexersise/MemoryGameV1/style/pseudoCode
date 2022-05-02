@@ -1,0 +1,81 @@
+/* MEMORY GAME
+
+//? HTML CSS: Hard coding ↓
+//?     - create a layout of the cards
+//?         * back and front
+//?     - new game button
+//?     - timer
+//?     - number of wrong guesses
+//?     - guesses counter
+
+//* Game flow:
+//* 1) all card hidden
+//* 2) when user press new game timer start counting
+//* 3) user press first card and it flipped to visible
+//* 4) user press second card:
+//*     a) same as first card
+//*          - both stays visible
+//*          - add one point to score board
+//*     b) not same as first card
+//*          - leave both card visible for specific amount of time and flip them back
+//*          - lock all card while both cards are visible
+//*          - add one point to wrong guesses on the score board
+//* 5) all cards visible
+//*     - stop timer
+//*     - initialize new game button
+//*     - show winner pop up (message)
+
+//? JS: funcs
+//? state:
+//?     - numOfFlippedCards - (0-2)
+//?     - firstCard - string
+//?     - secondCard - string
+//?     - score
+//?     - wrongGuesses
+//?     - numOfCards
+//?     - time
+
+//? 2)
+//?     - new game - button event ('click' , startGame)
+//?     - startGame:
+//?         * invoke resetGame()
+//?              resetGame:
+//!                 makeAllCardsHidden() ←
+//?                 resetVars()
+//?         * invoke startTimer()
+//!            - startTimer -
+//!                 * time = 0
+//!                 * ...
+//?         * invoke randomizeCards()
+//!            - randomizeCards -
+//? 3)
+//?     - invoke listenToCards()
+//?         * listenToCards:
+//?            - event on grid of cards ('click', gridClick)
+//?                * gridClick:
+//?                    - check event.target === real card
+//?                    - check numOfFlippedCards === 0-1
+//?                         true)  invoke cardsLogicHandler()
+//?                                cardsLogicHandler:
+//?                                     - numOfFlippedCards === 0
+//?                                         initial firstCard
+//?                                         flipCard(first)
+//?                                         add one to numOfFlippedCards
+//?                                     - numOfFlippedCards === 1
+//?                                         initial secondCard
+//?                                         check firstCard === secondCard
+//?                                             true)  flipCard(second)
+//?                                                    numOfFlippedCards = 0
+//?                                                    add one to score
+//?                                                    if score === numOfCards /2
+//?                                                         stopTimer()
+//?                                                         showPopUp()
+//?                                             false)  add one to numOfFlippedCards
+//?                                                     reset firstCard and secondCard
+//?                                                     invoke flipCardToOneSecond()
+//?                                                         flipCardToOneSecond:
+//?                                                             flipCard(second)
+//!                                                             after second flip both back
+//?                                                     numOfFlippedCards = 0
+//?                                                     add one to wrongGuesses
+//?                         false) do nothing
