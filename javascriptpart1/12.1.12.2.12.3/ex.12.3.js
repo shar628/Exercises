@@ -36,19 +36,12 @@ const school = {
             name: "Houston",
             age: 21,
         },
-    ],
-    findPerson: function (type, id1) {
-        if (type === "teacher") {
-            return this.teachers.find((e) => {
-                return id1 === e.id
-                // if (id1 === e.id) {
-                //     return true
-                // } else {
-                //     return false
-                // }
-            })
-        }
-    }
-}
-console.log(school.findPerson("teacher", 2));
+    ]
+};
 
+school.findPerson = (type, id) => {
+    return school[type].find((person) => {
+        return person.id === id;
+    });
+};
+// console.log(school.findPerson(, 1));
