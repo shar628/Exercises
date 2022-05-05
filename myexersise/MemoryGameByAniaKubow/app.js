@@ -2,51 +2,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'car1',
-            img: 'style/images/car1.png'
+            img: 'style/images/car1v2.png'
         },
         {
             name: 'car1',
-            img: 'style/images/car1.png'
+            img: 'style/images/car1v2.png'
         },
         {
             name: 'car2',
-            img: 'style/images/car2.jpg'
+            img: 'style/images/car2v2.png'
         },
         {
             name: 'car2',
-            img: 'style/images/car2.jpg '
+            img: 'style/images/car2v2.png'
         },
         {
             name: 'car3',
-            img: 'style/images/car3.png'
+            img: 'style/images/car3lt.png'
         },
         {
             name: 'car3',
-            img: 'style/images/car3.png'
+            img: 'style/images/car3lt.png'
         },
         {
             name: 'car4',
-            img: 'style/images/car4.jpg'
+            img: 'style/images/car4v2.jpg'
         },
         {
             name: 'car4',
-            img: 'style/images/car4.jpg'
+            img: 'style/images/car4v2.jpg'
         },
         {
             name: 'car5',
-            img: 'style/images/car5.webp'
+            img: 'style/images/car7v2.jpg'
         },
         {
             name: 'car5',
-            img: 'style/images/car5.webp'
+            img: 'style/images/car7v2.jpg'
         },
         {
             name: 'car6',
-            img: 'style/images/car6.webp'
+            img: 'style/images/car6v2.png'
         },
         {
             name: 'car6',
-            img: 'style/images/car6.webp'
+            img: 'style/images/car6v2.png'
         },
     ]
 
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', ' style/images/white4.png')
+            card.setAttribute('src', ' style/images/sclt2.png')
             card.setAttribute('data-id', i)
-            card.addEventListener('click',)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
@@ -74,11 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('you found a match')
-            cards[optionOneId].setAttribute('src', 'style/images/white4.png')
+            cards[optionOneId].setAttribute('src', 'style/images/white4v3.png')
+            cards[optionTwoId].setAttribute('src', 'style/images/white4v3.png')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'style/images/bl')
-            cards[optionTwoId].setAttribute('src', 'style/images/blank')
+            cards[optionOneId].setAttribute('src', 'style/images/sclt2.png')
+            cards[optionTwoId].setAttribute('src', 'style/images/sclt2.png')
             alert('try again')
         }
         cardsChosen = []
@@ -90,10 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function flipCard() {
-        var cardid = this.getAttribute('data-id')
-        cardsChosen.push(cardArray[cardid].name)
-        cardsChosenId.push(cardid)
-        this.setAttribute('src', cardArray[cardid].img)
+        var cardId = this.getAttribute('data-id')
+        cardsChosen.push(cardArray[cardId].name)
+        cardsChosenId.push(cardId)
+        this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500)
         }
@@ -106,4 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-})
+});
