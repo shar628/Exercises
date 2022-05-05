@@ -32,12 +32,16 @@ const newReleases = [
         bookmark: [{ id: 432534, time: 65876586 }],
     },
 ]
+// const title1 = () => {
+//     return newReleases.forEach(function (res) {
+//         return { id: res.id, title: res.title };
+//     })
+// }
 
-newReleases.forEach(function (res) {
-    console.log([res.id, res.title]);
-})
-
-newReleases.map(function (res2) {
-    console.log([res2.id, res2.title]);
-
-})
+const title2 = () => {
+    return newReleases.map(function (res2) {
+        return { id: res2.id, title: res2.title };
+    })
+};
+console.log(title1);
+// console.log(title2());
