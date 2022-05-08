@@ -16,4 +16,4 @@ function whoIsStronger(getStrength) {
 }
 whoIsStronger(hero.getStrength);
 console.log(whoIsStronger(hero.getStrength.bind(hero)));
-console.log(hero);
+// console.log(hero);
