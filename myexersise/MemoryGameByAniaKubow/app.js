@@ -101,10 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-
-
     createBoard()
-
-
 
 });

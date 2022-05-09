@@ -11,6 +11,7 @@ function printName() {
 function printHeroes(heroes, printFunc) {
     //add your code here
     heroes.forEach((hero) => printFunc.apply(hero))
+    //    bind() 
 }
 printHeroes(superHeroes, printName)
 
@@ -28,6 +29,6 @@ printHeroes(superHeroes, printName)
 // }
 
 // function printHeroes(heroes, printFunc) {
-//     heroes.forEach((hero) => printFunc.apply(hero));
+//     heroes.forEach((hero) => printFunc.call(hero));
 // }
 // printHeroes(superHeroes, printName);

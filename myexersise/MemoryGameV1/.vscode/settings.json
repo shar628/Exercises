@@ -1,10 +1,10 @@
 {
-    "workbench.colorCustomizations": {
-        "editor.lineHighlightBackground": "#1073cf2d",
-        "editor.lineHighlightBorder": "#9fced11f",
-        "activityBar.background": "#5A0D2F",
-        "titleBar.activeBackground": "#7E1341",
-        "titleBar.activeForeground": "#FFFCFD"
-    },
-    "liveServer.settings.port": 5501
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "activityBar.background": "#5A0D2F",
+    "titleBar.activeBackground": "#7E1341",
+    "titleBar.activeForeground": "#FFFCFD"
+  },
+  "liveServer.settings.port": 5502
 }

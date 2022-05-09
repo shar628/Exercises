@@ -25,7 +25,7 @@ html {
     grid-gap: 2vw;
     }
   #grid > div {
-    font-size: 10vw;
+    font-size: 5vw;
     padding: .5em;
     background: gold;
     text-align: center;
@@ -42,4 +42,6 @@ html {
 border: 1px solid gray;
 margin: auto;
 padding: 1px;
+
 }
+
