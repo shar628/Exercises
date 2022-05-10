@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.2rem;
+      }
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="searchInput" />
+
+    <div class="card" id="card"></div>
+    <h3 id="title"></h3>
+    <h3 id="Genre"></h3>
+    <h3 id="Year"></h3>
+    <h3 id="Plot"></h3>
+    <h3 id="Director"></h3>
+    <h3 id="Actors"></h3>
+
+    <script>
+      function getMovie(searchTerm) {
+        return fetch(`http://www.omdbapi.com/?t=${searchTerm}&apikey=52a4f239`)
+          .then((raw) => {
+            return raw.json();
+          })
+          .then((data) => {
+            return data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+
+      const searchInput = document.getElementById("searchInput");
+
+      searchInput.addEventListener("keydown", (event) => {
+        if (event.keyCode == 13) {
+          getMovie(event.target.value).then((movie) => {
+            console.log(movie);
+
+            let card = document.getElementById("card");
+            let title = document.getElementById("title");
+            let Genre = document.getElementById("Genre");
+            let Year = document.getElementById("Year");
+            let Plot = document.getElementById("Plot");
+            let Director = document.getElementById("Director");
+            let Actors = document.getElementById("Actors");
+            let Ratings = document.getElementById("Ratings");
+
+            card.setAttribute(
+              "style",
+              "background-image: url(" +
+                movie.Poster +
+                ");background-repeat: no-repeat;background-size: cover cover/center"
+            );
+            title.textContent = "Title: " + movie.Title;
+            Genre.textContent = "Genre: " + movie.Genre;
+            Year.textContent = "Year: " + movie.Year;
+            Plot.textContent = "Plot: " + movie.Plot;
+            Director.textContent = "Director: " + movie.Director;
+            Actors.textContent = "Actors: " + movie.Actors;
+            movie.Ratings.forEach((rating) => {
+              const h3 = document.createElement("h3");
+              document.body.appendChild(h3);
+              h3.innerHTML =
+                "source: " + rating.Source + " value: " + rating.Value;
+              console.log(rating);
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
