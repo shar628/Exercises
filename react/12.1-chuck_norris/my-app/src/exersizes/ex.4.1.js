@@ -4,14 +4,14 @@ class Ex4_1 extends React.Component {
     render() {
         return (
             <div>
-                <ButtonComp text="important" />
-                <ButtonComp text="not important" />
+                <Button text="important" />
+                <Button text="not important" />
             </div>
         );
     }
 }
 
-const ButtonComp = (props) => {
+const Button = (props) => {
     return <button className="button1">{props.text}</button>;
 };
 
