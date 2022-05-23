@@ -1,6 +1,6 @@
 import React from "react";
 
-class Ex4_1_buttons_props extends React.Component {
+class Ex4_1 extends React.Component {
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ const ButtonComp = (props) => {
     return <button className="button1">{props.text}</button>;
 };
 
-export default Ex4_1_buttons_props;
+export default Ex4_1;
