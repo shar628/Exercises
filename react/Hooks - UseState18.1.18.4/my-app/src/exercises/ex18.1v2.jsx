@@ -1,7 +1,9 @@
 import React ,{useState} from 'react'
 
 function Ex18_1v2({textLength, text}) {
+
 const [isHidden,setIsHidden]=useState(true)
+
 const handleToggle = () => {
     setIsHidden((prev)=>!prev)
 }
@@ -17,14 +19,11 @@ const insertText = ()=>{
     {isHidden?'show more':'show less'}
     </span>
      </p>
-   
 }
   return (<>
     <div >Ex18.1v2
         {insertText()}
     </div>
-
-
     </>)
 }
 
