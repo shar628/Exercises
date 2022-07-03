@@ -9,7 +9,8 @@ useEffect(()=>{
 const fetchData = async ()=>{
     try{
         const { data} = await axios.get(
-`https://pipedream.com/apps/swapi`
+// `https://pipedream.com/apps/swapi`
+`https://swapi.co/api/films/1/?format=json`
         );
 console.log(data);
     }catch(e){

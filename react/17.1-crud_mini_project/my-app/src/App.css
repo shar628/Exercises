@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.personContainer {
+   border: "3px solid  green" ;
+  /* style={{ border: "3px solid  green" }} */
+}

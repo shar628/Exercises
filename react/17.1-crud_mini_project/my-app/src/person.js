@@ -9,9 +9,12 @@ export default class Person extends Component {
     render() {
 
         return (
-            <div className="personContainer" style={{ border: "1px solid black" }}>
+            <div className="personContainer"
+                style={{ border: "3px solid  green", display: 'flex', flexWrap: 'wrap' }}  >
                 <div>{this.props.name}</div>
-                <img alt="#" src={this.props.img}></img>
+                <img alt="#" src={this.props.img}
+                    style={{ border: "3px solid  red", display: 'flex', flexWrap: 'wrap' }}
+                ></img>
                 <button>Delete</button>
                 <button onClick={() => {
                     this.props.handleUpdate(this.props.id, this.state.inputVal)
